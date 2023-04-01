@@ -421,7 +421,7 @@ contract DividendDistributor is IDividendDistributor {
     }
 }
 
-contract SafeGameCash is ERC20, Ownable {
+contract SwordGameCorp is ERC20, Ownable {
     using Address for address payable;
 
     mapping (address => bool) private _isExcludedFromFees;
@@ -513,7 +513,7 @@ contract SafeGameCash is ERC20, Ownable {
 
 
 
-    constructor() ERC20("SafeGame Cash", "SGC") {
+    constructor() ERC20("Sword Game Corp", "SGC") {
         _mint(msg.sender, 2 * 10 ** 9 * (10**9));
 
         totalBuyFees = buyRewardFee + buyLiquidityFee + buyMarketingFee;
